@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b16">
+    <title>Ghostly AI | Enter the Unknown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <a href="#" class="logo">👻 GHOSTLY AI</a>
+        <span class="status"><span class="dot"></span> THE SPIRIT IS ONLINE</span>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="ghost">👻</div>
+            <p class="eyebrow">AN EXPERIMENT BEYOND REALITY</p>
+            <h1>Enter the <span>Unknown.</span></h1>
+            <p class="subtitle">
+                Every machine has a secret. Tell us yours,
+                and let the darkness write the rest.
+            </p>
+        </section>
+
+        <section class="generator">
+            <label for="prompt">DESCRIBE YOUR NIGHTMARE</label>
+            <textarea id="prompt" rows="3"
+                placeholder="A lonely computer receives a message from someone who died 20 years ago..."></textarea>
+
+            <label for="mood">CHOOSE YOUR DARKNESS</label>
+            <select id="mood">
+                <option value="haunted">👻 Haunted and supernatural</option>
+                <option value="mystery">🔎 Dark mystery</option>
+                <option value="psychological">🧠 Psychological horror</option>
+                <option value="folklore">🕯️ Forgotten legends</option>
+            </select>
+
+            <div class="options">
+                <label for="engine">STORY ENGINE</label>
+                <select id="engine">
+                    <option value="local">Offline story engine</option>
+                    <option value="ai">Local open-source AI (Ollama)</option>
+                </select>
+            </div>
+
+            <button id="generateBtn" type="button">
+                ☠ GENERATE MY STORY
+            </button>
+
+            <p class="privacy">🔒 Your prompt stays on your device
+                when using the offline engine.</p>
+        </section>
+
+        <section class="result" id="result" aria-live="polite" hidden>
+            <div class="result-header">
+                <span class="eyebrow">TRANSMISSION RECEIVED</span>
+                <span class="signal">● SIGNAL DETECTED</span>
+            </div>
+            <h2 id="storyTitle">The Forgotten Signal</h2>
+            <div id="storyText" class="story-text"></div>
+            <div class="result-actions">
+                <button id="copyBtn" class="secondary" type="button">
+                    Copy story
+                </button>
+                <button id="againBtn" class="secondary" type="button">
+                    Generate another
+                </button>
+            </div>
+        </section>
+
+        <p id="message" class="message" role="status"></p>
+
+        <section class="about">
+            <h2>Why open innovation?</h2>
+            <p>
+                Open models give creators the freedom to experiment,
+                run AI locally, protect personal stories, and choose
+                which model powers their creations.
+            </p>
+            <div class="features">
+                <div><span>◈</span><h3>Privacy</h3><p>Local processing</p></div>
+                <div><span>⌘</span><h3>Freedom</h3><p>Choose your model</p></div>
+                <div><span>∞</span><h3>Open</h3><p>Build without lock-in</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>GHOSTLY AI © 2026 · CREATED IN THE SHADOWS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
